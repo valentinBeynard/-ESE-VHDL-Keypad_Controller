@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/digit_controller.xst" -ofn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/digit_controller.syr" 

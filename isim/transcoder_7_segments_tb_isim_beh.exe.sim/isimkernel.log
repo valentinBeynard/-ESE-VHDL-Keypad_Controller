@@ -1,0 +1,29 @@
+Command line:
+   transcoder_7_segments_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51745
+
+Thu Mar 07 22:46:41 2019
+
+
+ Elaboration Time: 0.15625 sec
+
+ Current Memory Usage: 5986.45 Meg
+
+ Total Signals          : 14
+ Total Nets             : 36
+ Total Signal Drivers   : 10
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 5
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 520
+Total Line Count : 27
+
+ Total Simulation Time: 0.15625 sec
+
+ Current Memory Usage: 5986.45 Meg
+
+Thu Mar 07 22:46:51 2019
+

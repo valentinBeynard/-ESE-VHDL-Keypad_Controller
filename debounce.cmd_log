@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/valentin.beynard/Documents/ESE_VHDL/Keyboard_controller/debounce.xst" -ofn "C:/Users/valentin.beynard/Documents/ESE_VHDL/Keyboard_controller/debounce.syr" 
+xst -intstyle ise -ifn "C:/Users/valentin.beynard/Documents/ESE_VHDL/Keyboard_controller/debounce.xst" -ofn "C:/Users/valentin.beynard/Documents/ESE_VHDL/Keyboard_controller/debounce.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc debounce_fsm.ucf -p xc3s200-ft256-4 debounce.ngc debounce.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o debounce_map.ncd debounce.ngd debounce.pcf 
+par -w -intstyle ise -ol high -t 1 debounce_map.ncd debounce.ncd debounce.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debounce.twx debounce.ncd -o debounce.twr debounce.pcf -ucf debounce_fsm.ucf 
+bitgen -intstyle ise -f debounce.ut debounce.ncd 
+netgen -intstyle ise -s 4  -pcf debounce.pcf -rpw 100 -tpw 0 -ar Structure -tm debounce -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim debounce.ncd debounce_timesim.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc debounce_fsm.ucf -p xc3s200-ft256-4 debounce.ngc debounce.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o debounce_map.ncd debounce.ngd debounce.pcf 
+par -w -intstyle ise -ol high -t 1 debounce_map.ncd debounce.ncd debounce.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debounce.twx debounce.ncd -o debounce.twr debounce.pcf -ucf debounce_fsm.ucf 
+bitgen -intstyle ise -f debounce.ut debounce.ncd 
+xst -intstyle ise -ifn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/debounce.xst" -ofn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/debounce.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/debounce.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/debounce.syr" 
+xst -intstyle ise -ifn "C:/Users/valentin.beynard/Documents/Keyboard_controller/debounce.xst" -ofn "C:/Users/valentin.beynard/Documents/Keyboard_controller/debounce.syr" 
+xst -intstyle ise -ifn "C:/Users/valentin.beynard/Documents/Keyboard_controller/debounce.xst" -ofn "C:/Users/valentin.beynard/Documents/Keyboard_controller/debounce.syr" 

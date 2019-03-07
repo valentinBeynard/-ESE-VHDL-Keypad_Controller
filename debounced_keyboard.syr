@@ -1,0 +1,656 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: debounced_keyboard.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "debounced_keyboard.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "debounced_keyboard"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : debounced_keyboard
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/clk_divider.vhd" in Library work.
+Architecture behavioral of Entity clk_divider is up to date.
+Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/debounce_fsm.vhd" in Library work.
+Architecture behavioral of Entity debounce_fsm is up to date.
+Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/debounce.vhd" in Library work.
+Architecture behavioral of Entity debounce is up to date.
+Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/debounced_keyboard.vhd" in Library work.
+Entity <debounced_keyboard> compiled.
+Entity <debounced_keyboard> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <debounced_keyboard> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clk_divider> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <debounce_fsm> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <debounced_keyboard> in library <work> (Architecture <behavioral>).
+Entity <debounced_keyboard> analyzed. Unit <debounced_keyboard> generated.
+
+Analyzing Entity <debounce> in library <work> (Architecture <behavioral>).
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing Entity <clk_divider> in library <work> (Architecture <behavioral>).
+Entity <clk_divider> analyzed. Unit <clk_divider> generated.
+
+Analyzing Entity <debounce_fsm> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "L:/CPE 4ETI/Keyboard_controller/debounce_fsm.vhd" line 52: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <current_state>
+Entity <debounce_fsm> analyzed. Unit <debounce_fsm> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk_divider>.
+    Related source file is "L:/CPE 4ETI/Keyboard_controller/clk_divider.vhd".
+    Found 1-bit register for signal <clk_out_int>.
+    Found 15-bit comparator less for signal <clk_out_int$cmp_lt0000> created at line 48.
+    Found 15-bit up counter for signal <vcount>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clk_divider> synthesized.
+
+
+Synthesizing Unit <debounce_fsm>.
+    Related source file is "L:/CPE 4ETI/Keyboard_controller/debounce_fsm.vhd".
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | zero                                           |
+    | Power Up State     | zero                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <debounce_sw>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 5-bit up counter for signal <m_tick_0>.
+    Found 5-bit up counter for signal <m_tick_1>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+Unit <debounce_fsm> synthesized.
+
+
+Synthesizing Unit <debounce>.
+    Related source file is "L:/CPE 4ETI/Keyboard_controller/debounce.vhd".
+Unit <debounce> synthesized.
+
+
+Synthesizing Unit <debounced_keyboard>.
+    Related source file is "L:/CPE 4ETI/Keyboard_controller/debounced_keyboard.vhd".
+Unit <debounced_keyboard> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 12
+ 15-bit up counter                                     : 4
+ 5-bit up counter                                      : 8
+# Registers                                            : 4
+ 1-bit register                                        : 4
+# Latches                                              : 4
+ 1-bit latch                                           : 4
+# Comparators                                          : 4
+ 15-bit comparator less                                : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <GEN_DEBOUCE_UNITY[0].UX/U1/current_state/FSM> on signal <current_state[1:2]> with user encoding.
+Optimizing FSM <GEN_DEBOUCE_UNITY[1].UX/U1/current_state/FSM> on signal <current_state[1:2]> with user encoding.
+Optimizing FSM <GEN_DEBOUCE_UNITY[2].UX/U1/current_state/FSM> on signal <current_state[1:2]> with user encoding.
+Optimizing FSM <GEN_DEBOUCE_UNITY[3].UX/U1/current_state/FSM> on signal <current_state[1:2]> with user encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ zero         | 00
+ wait_state_0 | 01
+ wait_state_1 | 10
+ one          | 11
+--------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 12
+ 15-bit up counter                                     : 4
+ 5-bit up counter                                      : 8
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Latches                                              : 4
+ 1-bit latch                                           : 4
+# Comparators                                          : 4
+ 15-bit comparator less                                : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <debounced_keyboard> ...
+
+Optimizing unit <debounce_fsm> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block debounced_keyboard, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 112
+ Flip-Flops                                            : 112
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : debounced_keyboard.ngr
+Top Level Output File Name         : debounced_keyboard
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 330
+#      GND                         : 1
+#      INV                         : 24
+#      LUT1                        : 64
+#      LUT2                        : 40
+#      LUT3                        : 20
+#      LUT3_L                      : 8
+#      LUT4                        : 24
+#      MUXCY                       : 84
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 60
+# FlipFlops/Latches                : 116
+#      FDC                         : 8
+#      FDCE                        : 40
+#      FDE                         : 4
+#      FDR                         : 60
+#      LD                          : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      IBUF                        : 4
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       95  out of   1920     4%  
+ Number of Slice Flip Flops:            116  out of   3840     3%  
+ Number of 4 input LUTs:                180  out of   3840     4%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    173     5%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------------------+------------------------------------------------+-------+
+Clock Signal                                                                                   | Clock buffer(FF name)                          | Load  |
+-----------------------------------------------------------------------------------------------+------------------------------------------------+-------+
+clk                                                                                            | BUFGP                                          | 72    |
+GEN_DEBOUCE_UNITY[0].UX/U0/clk_out_int                                                         | NONE(GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_0_4)    | 10    |
+GEN_DEBOUCE_UNITY[0].UX/U1/debounce_sw_or0000(GEN_DEBOUCE_UNITY[0].UX/U1/debounce_sw_or00001:O)| NONE(*)(GEN_DEBOUCE_UNITY[0].UX/U1/debounce_sw)| 1     |
+GEN_DEBOUCE_UNITY[1].UX/U0/clk_out_int                                                         | NONE(GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_0_4)    | 10    |
+GEN_DEBOUCE_UNITY[1].UX/U1/debounce_sw_or0000(GEN_DEBOUCE_UNITY[1].UX/U1/debounce_sw_or00001:O)| NONE(*)(GEN_DEBOUCE_UNITY[1].UX/U1/debounce_sw)| 1     |
+GEN_DEBOUCE_UNITY[2].UX/U0/clk_out_int                                                         | NONE(GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_0_4)    | 10    |
+GEN_DEBOUCE_UNITY[2].UX/U1/debounce_sw_or0000(GEN_DEBOUCE_UNITY[2].UX/U1/debounce_sw_or00001:O)| NONE(*)(GEN_DEBOUCE_UNITY[2].UX/U1/debounce_sw)| 1     |
+GEN_DEBOUCE_UNITY[3].UX/U0/clk_out_int                                                         | NONE(GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_0_4)    | 10    |
+GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw_or0000(GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw_or00001:O)| NONE(*)(GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw)| 1     |
+-----------------------------------------------------------------------------------------------+------------------------------------------------+-------+
+(*) These 4 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------+--------------------------------------------------------+-------+
+Control Signal                                                                                 | Buffer(FF name)                                        | Load  |
+-----------------------------------------------------------------------------------------------+--------------------------------------------------------+-------+
+N0(XST_GND:G)                                                                                  | NONE(GEN_DEBOUCE_UNITY[0].UX/U1/current_state_FSM_FFd1)| 8     |
+GEN_DEBOUCE_UNITY[0].UX/U1/debounce_sw_or0000(GEN_DEBOUCE_UNITY[0].UX/U1/debounce_sw_or00001:O)| NONE(GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_0_0)            | 5     |
+GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_0_not0001(GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_1_or00001:O)     | NONE(GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_1_0)            | 5     |
+GEN_DEBOUCE_UNITY[1].UX/U1/debounce_sw_or0000(GEN_DEBOUCE_UNITY[1].UX/U1/debounce_sw_or00001:O)| NONE(GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_0_0)            | 5     |
+GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_0_not0001(GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_1_or00001:O)     | NONE(GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_1_0)            | 5     |
+GEN_DEBOUCE_UNITY[2].UX/U1/debounce_sw_or0000(GEN_DEBOUCE_UNITY[2].UX/U1/debounce_sw_or00001:O)| NONE(GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_0_0)            | 5     |
+GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_0_not0001(GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_1_or00001:O)     | NONE(GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_1_0)            | 5     |
+GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw_or0000(GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw_or00001:O)| NONE(GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_0_0)            | 5     |
+GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_0_not0001(GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_1_or00001:O)     | NONE(GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_1_0)            | 5     |
+-----------------------------------------------------------------------------------------------+--------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.851ns (Maximum Frequency: 170.911MHz)
+   Minimum input arrival time before clock: 4.209ns
+   Maximum output required time after clock: 8.769ns
+   Maximum combinational path delay: 8.929ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.851ns (frequency: 170.911MHz)
+  Total number of paths / destination ports: 1260 / 132
+-------------------------------------------------------------------------
+Delay:               5.851ns (Levels of Logic = 8)
+  Source:            GEN_DEBOUCE_UNITY[3].UX/U0/vcount_3 (FF)
+  Destination:       GEN_DEBOUCE_UNITY[3].UX/U0/vcount_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: GEN_DEBOUCE_UNITY[3].UX/U0/vcount_3 to GEN_DEBOUCE_UNITY[3].UX/U0/vcount_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.720   1.216  GEN_DEBOUCE_UNITY[3].UX/U0/vcount_3 (GEN_DEBOUCE_UNITY[3].UX/U0/vcount_3)
+     LUT1:I0->O            1   0.551   0.000  GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<0>_rt (GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<0>_rt)
+     MUXCY:S->O            1   0.500   0.000  GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<0> (GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<1> (GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<2> (GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<3> (GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<4> (GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<5> (GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<5>)
+     MUXCY:CI->O          16   0.281   1.237  GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<6> (GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_cy<6>)
+     FDR:R                     1.026          GEN_DEBOUCE_UNITY[3].UX/U0/vcount_0
+    ----------------------------------------
+    Total                      5.851ns (3.398ns logic, 2.453ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GEN_DEBOUCE_UNITY[0].UX/U0/clk_out_int'
+  Clock period: 3.449ns (frequency: 289.939MHz)
+  Total number of paths / destination ports: 30 / 10
+-------------------------------------------------------------------------
+Delay:               3.449ns (Levels of Logic = 2)
+  Source:            GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_0_2 (FF)
+  Destination:       GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_0_4 (FF)
+  Source Clock:      GEN_DEBOUCE_UNITY[0].UX/U0/clk_out_int rising
+  Destination Clock: GEN_DEBOUCE_UNITY[0].UX/U0/clk_out_int rising
+
+  Data Path: GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_0_2 to GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_0_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.720   1.256  GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_0_2 (GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_0_2)
+     LUT3_L:I0->LO         1   0.551   0.168  GEN_DEBOUCE_UNITY[0].UX/U1/Mcount_m_tick_0_cy<2>11 (GEN_DEBOUCE_UNITY[0].UX/U1/Mcount_m_tick_0_cy<2>)
+     LUT3:I2->O            1   0.551   0.000  GEN_DEBOUCE_UNITY[0].UX/U1/Mcount_m_tick_0_xor<4>11 (GEN_DEBOUCE_UNITY[0].UX/U1/Result<4>1)
+     FDCE:D                    0.203          GEN_DEBOUCE_UNITY[0].UX/U1/m_tick_0_4
+    ----------------------------------------
+    Total                      3.449ns (2.025ns logic, 1.424ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GEN_DEBOUCE_UNITY[1].UX/U0/clk_out_int'
+  Clock period: 3.449ns (frequency: 289.939MHz)
+  Total number of paths / destination ports: 30 / 10
+-------------------------------------------------------------------------
+Delay:               3.449ns (Levels of Logic = 2)
+  Source:            GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_0_2 (FF)
+  Destination:       GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_0_4 (FF)
+  Source Clock:      GEN_DEBOUCE_UNITY[1].UX/U0/clk_out_int rising
+  Destination Clock: GEN_DEBOUCE_UNITY[1].UX/U0/clk_out_int rising
+
+  Data Path: GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_0_2 to GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_0_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.720   1.256  GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_0_2 (GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_0_2)
+     LUT3_L:I0->LO         1   0.551   0.168  GEN_DEBOUCE_UNITY[1].UX/U1/Mcount_m_tick_0_cy<2>11 (GEN_DEBOUCE_UNITY[1].UX/U1/Mcount_m_tick_0_cy<2>)
+     LUT3:I2->O            1   0.551   0.000  GEN_DEBOUCE_UNITY[1].UX/U1/Mcount_m_tick_0_xor<4>11 (GEN_DEBOUCE_UNITY[1].UX/U1/Result<4>1)
+     FDCE:D                    0.203          GEN_DEBOUCE_UNITY[1].UX/U1/m_tick_0_4
+    ----------------------------------------
+    Total                      3.449ns (2.025ns logic, 1.424ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GEN_DEBOUCE_UNITY[2].UX/U0/clk_out_int'
+  Clock period: 3.449ns (frequency: 289.939MHz)
+  Total number of paths / destination ports: 30 / 10
+-------------------------------------------------------------------------
+Delay:               3.449ns (Levels of Logic = 2)
+  Source:            GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_0_2 (FF)
+  Destination:       GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_0_4 (FF)
+  Source Clock:      GEN_DEBOUCE_UNITY[2].UX/U0/clk_out_int rising
+  Destination Clock: GEN_DEBOUCE_UNITY[2].UX/U0/clk_out_int rising
+
+  Data Path: GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_0_2 to GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_0_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.720   1.256  GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_0_2 (GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_0_2)
+     LUT3_L:I0->LO         1   0.551   0.168  GEN_DEBOUCE_UNITY[2].UX/U1/Mcount_m_tick_0_cy<2>11 (GEN_DEBOUCE_UNITY[2].UX/U1/Mcount_m_tick_0_cy<2>)
+     LUT3:I2->O            1   0.551   0.000  GEN_DEBOUCE_UNITY[2].UX/U1/Mcount_m_tick_0_xor<4>11 (GEN_DEBOUCE_UNITY[2].UX/U1/Result<4>1)
+     FDCE:D                    0.203          GEN_DEBOUCE_UNITY[2].UX/U1/m_tick_0_4
+    ----------------------------------------
+    Total                      3.449ns (2.025ns logic, 1.424ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GEN_DEBOUCE_UNITY[3].UX/U0/clk_out_int'
+  Clock period: 3.449ns (frequency: 289.939MHz)
+  Total number of paths / destination ports: 30 / 10
+-------------------------------------------------------------------------
+Delay:               3.449ns (Levels of Logic = 2)
+  Source:            GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_0_2 (FF)
+  Destination:       GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_0_4 (FF)
+  Source Clock:      GEN_DEBOUCE_UNITY[3].UX/U0/clk_out_int rising
+  Destination Clock: GEN_DEBOUCE_UNITY[3].UX/U0/clk_out_int rising
+
+  Data Path: GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_0_2 to GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_0_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.720   1.256  GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_0_2 (GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_0_2)
+     LUT3_L:I0->LO         1   0.551   0.168  GEN_DEBOUCE_UNITY[3].UX/U1/Mcount_m_tick_0_cy<2>11 (GEN_DEBOUCE_UNITY[3].UX/U1/Mcount_m_tick_0_cy<2>)
+     LUT3:I2->O            1   0.551   0.000  GEN_DEBOUCE_UNITY[3].UX/U1/Mcount_m_tick_0_xor<4>11 (GEN_DEBOUCE_UNITY[3].UX/U1/Result<4>1)
+     FDCE:D                    0.203          GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_0_4
+    ----------------------------------------
+    Total                      3.449ns (2.025ns logic, 1.424ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 12 / 8
+-------------------------------------------------------------------------
+Offset:              4.209ns (Levels of Logic = 3)
+  Source:            raw_lines<0> (PAD)
+  Destination:       GEN_DEBOUCE_UNITY[0].UX/U1/current_state_FSM_FFd2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: raw_lines<0> to GEN_DEBOUCE_UNITY[0].UX/U1/current_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.821   1.256  raw_lines_0_IBUF (raw_lines_0_IBUF)
+     LUT2:I0->O            1   0.551   0.827  GEN_DEBOUCE_UNITY[0].UX/U1/current_state_FSM_FFd2-In15 (GEN_DEBOUCE_UNITY[0].UX/U1/current_state_FSM_FFd2-In15)
+     LUT4:I3->O            1   0.551   0.000  GEN_DEBOUCE_UNITY[0].UX/U1/current_state_FSM_FFd2-In77 (GEN_DEBOUCE_UNITY[0].UX/U1/current_state_FSM_FFd2-In)
+     FDC:D                     0.203          GEN_DEBOUCE_UNITY[0].UX/U1/current_state_FSM_FFd2
+    ----------------------------------------
+    Total                      4.209ns (2.126ns logic, 2.083ns route)
+                                       (50.5% logic, 49.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw_or0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              8.769ns (Levels of Logic = 2)
+  Source:            GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw (LATCH)
+  Destination:       lines<3> (PAD)
+  Source Clock:      GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw_or0000 falling
+
+  Data Path: GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw to lines<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.633   1.140  GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw (GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw)
+     LUT2:I0->O            1   0.551   0.801  lines<3>1 (lines_3_OBUF)
+     OBUF:I->O                 5.644          lines_3_OBUF (lines<3>)
+    ----------------------------------------
+    Total                      8.769ns (6.828ns logic, 1.941ns route)
+                                       (77.9% logic, 22.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GEN_DEBOUCE_UNITY[2].UX/U1/debounce_sw_or0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              8.769ns (Levels of Logic = 2)
+  Source:            GEN_DEBOUCE_UNITY[2].UX/U1/debounce_sw (LATCH)
+  Destination:       lines<2> (PAD)
+  Source Clock:      GEN_DEBOUCE_UNITY[2].UX/U1/debounce_sw_or0000 falling
+
+  Data Path: GEN_DEBOUCE_UNITY[2].UX/U1/debounce_sw to lines<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.633   1.140  GEN_DEBOUCE_UNITY[2].UX/U1/debounce_sw (GEN_DEBOUCE_UNITY[2].UX/U1/debounce_sw)
+     LUT2:I0->O            1   0.551   0.801  lines<2>1 (lines_2_OBUF)
+     OBUF:I->O                 5.644          lines_2_OBUF (lines<2>)
+    ----------------------------------------
+    Total                      8.769ns (6.828ns logic, 1.941ns route)
+                                       (77.9% logic, 22.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GEN_DEBOUCE_UNITY[1].UX/U1/debounce_sw_or0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              8.769ns (Levels of Logic = 2)
+  Source:            GEN_DEBOUCE_UNITY[1].UX/U1/debounce_sw (LATCH)
+  Destination:       lines<1> (PAD)
+  Source Clock:      GEN_DEBOUCE_UNITY[1].UX/U1/debounce_sw_or0000 falling
+
+  Data Path: GEN_DEBOUCE_UNITY[1].UX/U1/debounce_sw to lines<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.633   1.140  GEN_DEBOUCE_UNITY[1].UX/U1/debounce_sw (GEN_DEBOUCE_UNITY[1].UX/U1/debounce_sw)
+     LUT2:I0->O            1   0.551   0.801  lines<1>1 (lines_1_OBUF)
+     OBUF:I->O                 5.644          lines_1_OBUF (lines<1>)
+    ----------------------------------------
+    Total                      8.769ns (6.828ns logic, 1.941ns route)
+                                       (77.9% logic, 22.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GEN_DEBOUCE_UNITY[0].UX/U1/debounce_sw_or0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              8.769ns (Levels of Logic = 2)
+  Source:            GEN_DEBOUCE_UNITY[0].UX/U1/debounce_sw (LATCH)
+  Destination:       lines<0> (PAD)
+  Source Clock:      GEN_DEBOUCE_UNITY[0].UX/U1/debounce_sw_or0000 falling
+
+  Data Path: GEN_DEBOUCE_UNITY[0].UX/U1/debounce_sw to lines<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.633   1.140  GEN_DEBOUCE_UNITY[0].UX/U1/debounce_sw (GEN_DEBOUCE_UNITY[0].UX/U1/debounce_sw)
+     LUT2:I0->O            1   0.551   0.801  lines<0>1 (lines_0_OBUF)
+     OBUF:I->O                 5.644          lines_0_OBUF (lines<0>)
+    ----------------------------------------
+    Total                      8.769ns (6.828ns logic, 1.941ns route)
+                                       (77.9% logic, 22.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               8.929ns (Levels of Logic = 3)
+  Source:            raw_lines<3> (PAD)
+  Destination:       lines<3> (PAD)
+
+  Data Path: raw_lines<3> to lines<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.821   1.112  raw_lines_3_IBUF (raw_lines_3_IBUF)
+     LUT2:I1->O            1   0.551   0.801  lines<3>1 (lines_3_OBUF)
+     OBUF:I->O                 5.644          lines_3_OBUF (lines<3>)
+    ----------------------------------------
+    Total                      8.929ns (7.016ns logic, 1.913ns route)
+                                       (78.6% logic, 21.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.27 secs
+ 
+--> 
+
+Total memory usage is 4550276 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,501 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: debounce.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "debounce.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "debounce"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : debounce
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/valentin.beynard/Documents/Keyboard_controller/clk_divider.vhd" in Library work.
+Architecture behavioral of Entity clk_divider is up to date.
+Compiling vhdl file "C:/Users/valentin.beynard/Documents/Keyboard_controller/debounce_fsm.vhd" in Library work.
+Architecture behavioral of Entity debounce_fsm is up to date.
+Compiling vhdl file "C:/Users/valentin.beynard/Documents/Keyboard_controller/debounce.vhd" in Library work.
+Entity <debounce> compiled.
+Entity <debounce> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clk_divider> in library <work> (architecture <behavioral>) with generics.
+	N = 25000
+
+Analyzing hierarchy for entity <debounce_fsm> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <debounce> in library <work> (Architecture <behavioral>).
+Entity <debounce> analyzed. Unit <debounce> generated.
+
+Analyzing generic Entity <clk_divider> in library <work> (Architecture <behavioral>).
+	N = 25000
+Entity <clk_divider> analyzed. Unit <clk_divider> generated.
+
+Analyzing Entity <debounce_fsm> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/valentin.beynard/Documents/Keyboard_controller/debounce_fsm.vhd" line 52: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <current_state>
+Entity <debounce_fsm> analyzed. Unit <debounce_fsm> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clk_divider>.
+    Related source file is "C:/Users/valentin.beynard/Documents/Keyboard_controller/clk_divider.vhd".
+    Found 1-bit register for signal <clk_out_int>.
+    Found 15-bit comparator less for signal <clk_out_int$cmp_lt0000> created at line 49.
+    Found 15-bit up counter for signal <vcount>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clk_divider> synthesized.
+
+
+Synthesizing Unit <debounce_fsm>.
+    Related source file is "C:/Users/valentin.beynard/Documents/Keyboard_controller/debounce_fsm.vhd".
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | zero                                           |
+    | Power Up State     | zero                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <debounce_sw>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 5-bit up counter for signal <m_tick_0>.
+    Found 5-bit up counter for signal <m_tick_1>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+Unit <debounce_fsm> synthesized.
+
+
+Synthesizing Unit <debounce>.
+    Related source file is "C:/Users/valentin.beynard/Documents/Keyboard_controller/debounce.vhd".
+Unit <debounce> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 15-bit up counter                                     : 1
+ 5-bit up counter                                      : 2
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 1
+ 15-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <U1/current_state/FSM> on signal <current_state[1:2]> with user encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ zero         | 00
+ wait_state_0 | 01
+ wait_state_1 | 10
+ one          | 11
+--------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 3
+ 15-bit up counter                                     : 1
+ 5-bit up counter                                      : 2
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 1
+ 15-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <debounce_fsm> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block debounce, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : debounce.ngr
+Top Level Output File Name         : debounce
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 5
+
+Cell Usage :
+# BELS                             : 85
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 16
+#      LUT2                        : 9
+#      LUT3                        : 7
+#      LUT3_L                      : 2
+#      LUT4                        : 6
+#      MUXCY                       : 21
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 15
+# FlipFlops/Latches                : 29
+#      FDC                         : 2
+#      FDCE                        : 10
+#      FDE                         : 1
+#      FDR                         : 15
+#      LD                          : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
+#      OBUF                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       24  out of   1920     1%  
+ Number of Slice Flip Flops:             28  out of   3840     0%  
+ Number of 4 input LUTs:                 46  out of   3840     1%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    173     2%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------+------------------------+-------+
+Clock Signal                                   | Clock buffer(FF name)  | Load  |
+-----------------------------------------------+------------------------+-------+
+clk                                            | BUFGP                  | 18    |
+U0/clk_out_int                                 | NONE(U1/m_tick_0_4)    | 10    |
+U1/debounce_sw_or0000(U1/debounce_sw_or00001:O)| NONE(*)(U1/debounce_sw)| 1     |
+-----------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------+------------------------+-------+
+Control Signal                           | Buffer(FF name)        | Load  |
+-----------------------------------------+------------------------+-------+
+U1/m_tick_0_or0000(U1/m_tick_0_or00001:O)| NONE(U1/m_tick_0_0)    | 5     |
+U1/m_tick_1_or0000(U1/m_tick_1_or00001:O)| NONE(U1/m_tick_1_0)    | 5     |
+reset                                    | IBUF                   | 2     |
+-----------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.851ns (Maximum Frequency: 170.911MHz)
+   Minimum input arrival time before clock: 4.209ns
+   Maximum output required time after clock: 7.078ns
+   Maximum combinational path delay: 7.382ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.851ns (frequency: 170.911MHz)
+  Total number of paths / destination ports: 315 / 33
+-------------------------------------------------------------------------
+Delay:               5.851ns (Levels of Logic = 8)
+  Source:            U0/vcount_3 (FF)
+  Destination:       U0/vcount_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U0/vcount_3 to U0/vcount_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.720   1.216  U0/vcount_3 (U0/vcount_3)
+     LUT1:I0->O            1   0.551   0.000  U0/Mcompar_clk_out_int_cmp_lt0000_cy<0>_rt (U0/Mcompar_clk_out_int_cmp_lt0000_cy<0>_rt)
+     MUXCY:S->O            1   0.500   0.000  U0/Mcompar_clk_out_int_cmp_lt0000_cy<0> (U0/Mcompar_clk_out_int_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  U0/Mcompar_clk_out_int_cmp_lt0000_cy<1> (U0/Mcompar_clk_out_int_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  U0/Mcompar_clk_out_int_cmp_lt0000_cy<2> (U0/Mcompar_clk_out_int_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  U0/Mcompar_clk_out_int_cmp_lt0000_cy<3> (U0/Mcompar_clk_out_int_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  U0/Mcompar_clk_out_int_cmp_lt0000_cy<4> (U0/Mcompar_clk_out_int_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  U0/Mcompar_clk_out_int_cmp_lt0000_cy<5> (U0/Mcompar_clk_out_int_cmp_lt0000_cy<5>)
+     MUXCY:CI->O          16   0.281   1.237  U0/Mcompar_clk_out_int_cmp_lt0000_cy<6> (U0/Mcompar_clk_out_int_cmp_lt0000_cy<6>)
+     FDR:R                     1.026          U0/vcount_0
+    ----------------------------------------
+    Total                      5.851ns (3.398ns logic, 2.453ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U0/clk_out_int'
+  Clock period: 3.449ns (frequency: 289.939MHz)
+  Total number of paths / destination ports: 30 / 10
+-------------------------------------------------------------------------
+Delay:               3.449ns (Levels of Logic = 2)
+  Source:            U1/m_tick_0_2 (FF)
+  Destination:       U1/m_tick_0_4 (FF)
+  Source Clock:      U0/clk_out_int rising
+  Destination Clock: U0/clk_out_int rising
+
+  Data Path: U1/m_tick_0_2 to U1/m_tick_0_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.720   1.256  U1/m_tick_0_2 (U1/m_tick_0_2)
+     LUT3_L:I0->LO         1   0.551   0.168  U1/Mcount_m_tick_0_cy<2>11 (U1/Mcount_m_tick_0_cy<2>)
+     LUT3:I2->O            1   0.551   0.000  U1/Mcount_m_tick_0_xor<4>11 (U1/Result<4>1)
+     FDCE:D                    0.203          U1/m_tick_0_4
+    ----------------------------------------
+    Total                      3.449ns (2.025ns logic, 1.424ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              4.209ns (Levels of Logic = 3)
+  Source:            sw (PAD)
+  Destination:       U1/current_state_FSM_FFd2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: sw to U1/current_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.821   1.256  sw_IBUF (sw_out_OBUF)
+     LUT2:I0->O            1   0.551   0.827  U1/current_state_FSM_FFd2-In15 (U1/current_state_FSM_FFd2-In15)
+     LUT4:I3->O            1   0.551   0.000  U1/current_state_FSM_FFd2-In77 (U1/current_state_FSM_FFd2-In)
+     FDC:D                     0.203          U1/current_state_FSM_FFd2
+    ----------------------------------------
+    Total                      4.209ns (2.126ns logic, 2.083ns route)
+                                       (50.5% logic, 49.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U1/debounce_sw_or0000'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.078ns (Levels of Logic = 1)
+  Source:            U1/debounce_sw (LATCH)
+  Destination:       sw_debounce (PAD)
+  Source Clock:      U1/debounce_sw_or0000 falling
+
+  Data Path: U1/debounce_sw to sw_debounce
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.633   0.801  U1/debounce_sw (U1/debounce_sw)
+     OBUF:I->O                 5.644          sw_debounce_OBUF (sw_debounce)
+    ----------------------------------------
+    Total                      7.078ns (6.277ns logic, 0.801ns route)
+                                       (88.7% logic, 11.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               7.382ns (Levels of Logic = 2)
+  Source:            sw (PAD)
+  Destination:       sw_out (PAD)
+
+  Data Path: sw to sw_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.821   0.917  sw_IBUF (sw_out_OBUF)
+     OBUF:I->O                 5.644          sw_out_OBUF (sw_out)
+    ----------------------------------------
+    Total                      7.382ns (6.465ns logic, 0.917ns route)
+                                       (87.6% logic, 12.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.66 secs
+ 
+--> 
+
+Total memory usage is 259076 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

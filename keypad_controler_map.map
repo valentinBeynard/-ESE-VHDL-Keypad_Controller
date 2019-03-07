@@ -1,0 +1,20 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'keypad_controler'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off
+-c 100 -o keypad_controler_map.ncd keypad_controler.ngd keypad_controler.pcf 
+Target Device  : xc3s200
+Target Package : ft256
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Thu Feb 21 17:47:46 2019
+
+ERROR:Map:116 - The design is empty.  No processing will be done.
+ERROR:Map:52 - Problem encountered processing RPMs. 
+
+Design Summary
+--------------
+Number of errors   :   2
+Number of warnings :   0

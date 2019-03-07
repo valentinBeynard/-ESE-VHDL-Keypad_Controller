@@ -1,0 +1,2 @@
+vhdl work "netgen/par/debounce_timesim.vhd"
+vhdl work "debounce_tb.vhd"

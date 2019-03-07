@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/valentin.beynard/Documents/ESE_VHDL/Keyboard_controller/debounce_fsm.xst" -ofn "C:/Users/valentin.beynard/Documents/ESE_VHDL/Keyboard_controller/debounce_fsm.syr" 
+xst -intstyle ise -ifn "C:/Users/valentin.beynard/Documents/ESE_VHDL/Keyboard_controller/debounce_fsm.xst" -ofn "C:/Users/valentin.beynard/Documents/ESE_VHDL/Keyboard_controller/debounce_fsm.syr" 
+xst -intstyle ise -ifn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/debounce_fsm.xst" -ofn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/debounce_fsm.syr" 
+xst -intstyle ise -ifn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/debounce_fsm.xst" -ofn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/debounce_fsm.syr" 
+xst -intstyle ise -ifn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/debounce_fsm.xst" -ofn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/debounce_fsm.syr" 

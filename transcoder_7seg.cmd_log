@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/4A/ESE_VHDL/Keyboard_controller/transcoder_7seg.xst" -ofn "D:/4A/ESE_VHDL/Keyboard_controller/transcoder_7seg.syr" 
+xst -intstyle ise -ifn "D:/4A/ESE_VHDL/Keyboard_controller/transcoder_7seg.xst" -ofn "D:/4A/ESE_VHDL/Keyboard_controller/transcoder_7seg.syr" 

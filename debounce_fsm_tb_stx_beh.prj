@@ -1,0 +1,2 @@
+vhdl isim_temp "debounce_fsm.vhd"
+vhdl isim_temp "debounce_fsm_tb.vhd"

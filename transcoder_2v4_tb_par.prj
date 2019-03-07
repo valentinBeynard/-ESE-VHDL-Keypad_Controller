@@ -1,0 +1,2 @@
+vhdl work "netgen/par/transcoder_2v4_timesim.vhd"
+vhdl work "transcoder_2v4_tb.vhd"

@@ -1,0 +1,2 @@
+vhdl isim_temp "transcoder_7_segments.vhd"
+vhdl isim_temp "transcoder_7_segments_tb.vhd"

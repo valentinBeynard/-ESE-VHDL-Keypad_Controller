@@ -1,0 +1,23 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "L:/CPE 4ETI/Keyboard_controller/display_controller_tb_isim_beh.exe" -prj "L:/CPE 4ETI/Keyboard_controller/display_controller_tb_beh.prj" "work.display_controller_tb" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "L:/CPE 4ETI/Keyboard_controller/clk_divider.vhd" into library work
+Parsing VHDL file "L:/CPE 4ETI/Keyboard_controller/display_controller.vhd" into library work
+Parsing VHDL file "L:/CPE 4ETI/Keyboard_controller/display_controller_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity clk_divider [\clk_divider(200000)\]
+Compiling architecture behavioral of entity display_controller [display_controller_default]
+Compiling architecture behavior of entity display_controller_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: Le chemin d accès spécifié est introuvable, "isim\display_controller_tb_isim_beh.exe.sim\libPortability.dll".
+Compiled 8 VHDL Units
+Built simulation executable L:/CPE 4ETI/Keyboard_controller/display_controller_tb_isim_beh.exe
+Fuse Memory Usage: 35208 KB
+Fuse CPU Usage: 421 ms

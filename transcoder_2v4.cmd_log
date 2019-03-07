@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/transcoder_2v4.xst" -ofn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/transcoder_2v4.syr" 
+xst -intstyle ise -ifn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/transcoder_2v4.xst" -ofn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/transcoder_2v4.syr" 
+xst -intstyle ise -ifn "C:/Users/valentin.beynard/Documents/Keyboard_controller/transcoder_2v4.xst" -ofn "C:/Users/valentin.beynard/Documents/Keyboard_controller/transcoder_2v4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 transcoder_2v4.ngc transcoder_2v4.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o transcoder_2v4_map.ncd transcoder_2v4.ngd transcoder_2v4.pcf 
+par -w -intstyle ise -ol high -t 1 transcoder_2v4_map.ncd transcoder_2v4.ncd transcoder_2v4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml transcoder_2v4.twx transcoder_2v4.ncd -o transcoder_2v4.twr transcoder_2v4.pcf 
+netgen -intstyle ise -s 4  -pcf transcoder_2v4.pcf -rpw 100 -tpw 0 -ar Structure -tm transcoder_2v4 -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim transcoder_2v4.ncd transcoder_2v4_timesim.vhd 
+xst -intstyle ise -ifn "C:/Users/valentin.beynard/Documents/Keyboard_controller/transcoder_2v4.xst" -ofn "C:/Users/valentin.beynard/Documents/Keyboard_controller/transcoder_2v4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 transcoder_2v4.ngc transcoder_2v4.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o transcoder_2v4_map.ncd transcoder_2v4.ngd transcoder_2v4.pcf 
+par -w -intstyle ise -ol high -t 1 transcoder_2v4_map.ncd transcoder_2v4.ncd transcoder_2v4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml transcoder_2v4.twx transcoder_2v4.ncd -o transcoder_2v4.twr transcoder_2v4.pcf 
+netgen -intstyle ise -s 4  -pcf transcoder_2v4.pcf -rpw 100 -tpw 0 -ar Structure -tm transcoder_2v4 -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim transcoder_2v4.ncd transcoder_2v4_timesim.vhd 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "L:/CPE 4ETI/Keyboard_controller/display_controller_tb_isim_beh.exe" -prj "L:/CPE 4ETI/Keyboard_controller/display_controller_tb_beh.prj" "work.display_controller_tb" 

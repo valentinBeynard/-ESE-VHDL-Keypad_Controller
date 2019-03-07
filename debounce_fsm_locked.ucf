@@ -1,0 +1,8 @@
+
+#pin2ucf - Fri Feb 15 09:22:11 2019
+#The following constraints were newly added
+NET "clk" LOC = T9;
+NET "clk_10ms" LOC = R9;
+NET "sw" LOC = N9;
+NET "debounce_sw" LOC = T10;
+NET "reset" LOC = P9;

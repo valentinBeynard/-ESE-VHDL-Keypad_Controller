@@ -1,0 +1,2 @@
+vhdl work "netgen/par/clk_divider_timesim.vhd"
+vhdl work "clk_divider_behavioral.vhd"

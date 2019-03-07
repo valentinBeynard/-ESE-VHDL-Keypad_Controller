@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Keyboard_controller" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/clk_divider_behavioral - behavior C:|Users|pierr|Documents|Ecole|4A|VHDL|vhdl_projet|Keyboard_controller|clk_divider_behavioral.vhd</ClosedNode>
+         <ClosedNode>/counter_2b_tb - behavior C:|Users|pierr|Documents|Ecole|4A|VHDL|vhdl_projet|Keyboard_controller|counter_2b_tb.vhd</ClosedNode>
+         <ClosedNode>/debounce_fsm_tb - behavior C:|Users|pierr|Documents|Ecole|4A|VHDL|vhdl_projet|Keyboard_controller|debounce_fsm_tb.vhd</ClosedNode>
+         <ClosedNode>/debounced_keyboard - Behavioral L:|CPE 4ETI|Keyboard_controller|debounced_keyboard.vhd/U1 - debounce - Behavioral</ClosedNode>
+         <ClosedNode>/keypad_controler - Behavioral C:|Users|pierr|Documents|Ecole|4A|VHDL|vhdl_projet|Keyboard_controller|keypad_controler.vhd/U2 - debounce - Behavioral</ClosedNode>
+         <ClosedNode>/keypad_controler - Behavioral D:|4A|ESE_VHDL|Keyboard_controller|keypad_controler.vhd/U2 - debounce - Behavioral</ClosedNode>
+         <ClosedNode>/keypad_controler - Behavioral L:|CPE 4ETI|Keyboard_controller|keypad_controler.vhd/U2 - debounce - Behavioral</ClosedNode>
+         <ClosedNode>/transcoder_2v4_tb - behavior C:|Users|pierr|Documents|Ecole|4A|VHDL|vhdl_projet|Keyboard_controller|transcoder_2v4_tb.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>U0 - counter_2b - Behavioral (C:/Users/valentin.beynard/Documents/Keyboard_controller/counter_2b.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000019e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000019e0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>U0 - counter_2b - Behavioral (C:/Users/valentin.beynard/Documents/Keyboard_controller/counter_2b.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a5000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a50000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a1000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002d50000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>clk_divider.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Synthesize - XST</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000194000000010000000100000000000000000000000064ffffffff000000810000000000000001000001940000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Synthesize - XST</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff000000000000000200000133000000b201000000040100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/clk_divider_behavioral - behavior C:|Users|pierr|Documents|Ecole|4A|VHDL|vhdl_projet|Keyboard_controller|clk_divider_behavioral.vhd</ClosedNode>
+         <ClosedNode>/clk_divider_behavioral - behavior C:|Users|valentin.beynard|Documents|Keyboard_controller|clk_divider_behavioral.vhd</ClosedNode>
+         <ClosedNode>/clk_divider_behavioral - behavior D:|4A|ESE_VHDL|Keyboard_controller|clk_divider_behavioral.vhd</ClosedNode>
+         <ClosedNode>/clk_divider_behavioral - behavior E:|4A|ESE_VHDL|Keyboard_controller|clk_divider_behavioral.vhd</ClosedNode>
+         <ClosedNode>/clk_divider_display_tb - behavior C:|Users|valentin.beynard|Documents|Keyboard_controller|clk_divider_display_tb.vhd</ClosedNode>
+         <ClosedNode>/clk_divider_display_tb - behavior E:|4A|ESE_VHDL|Keyboard_controller|clk_divider_display_tb.vhd</ClosedNode>
+         <ClosedNode>/counter_2b_tb - behavior C:|Users|pierr|Documents|Ecole|4A|VHDL|vhdl_projet|Keyboard_controller|counter_2b_tb.vhd</ClosedNode>
+         <ClosedNode>/counter_2b_tb - behavior C:|Users|valentin.beynard|Documents|Keyboard_controller|counter_2b_tb.vhd</ClosedNode>
+         <ClosedNode>/counter_2b_tb - behavior D:|4A|ESE_VHDL|Keyboard_controller|counter_2b_tb.vhd</ClosedNode>
+         <ClosedNode>/counter_2b_tb - behavior E:|4A|ESE_VHDL|Keyboard_controller|counter_2b_tb.vhd</ClosedNode>
+         <ClosedNode>/debounce_fsm_tb - behavior C:|Users|pierr|Documents|Ecole|4A|VHDL|vhdl_projet|Keyboard_controller|debounce_fsm_tb.vhd</ClosedNode>
+         <ClosedNode>/debounce_fsm_tb - behavior C:|Users|valentin.beynard|Documents|Keyboard_controller|debounce_fsm_tb.vhd</ClosedNode>
+         <ClosedNode>/debounce_fsm_tb - behavior D:|4A|ESE_VHDL|Keyboard_controller|debounce_fsm_tb.vhd</ClosedNode>
+         <ClosedNode>/debounce_fsm_tb - behavior E:|4A|ESE_VHDL|Keyboard_controller|debounce_fsm_tb.vhd</ClosedNode>
+         <ClosedNode>/debounce_tb - behavior D:|4A|ESE_VHDL|Keyboard_controller|debounce_tb.vhd</ClosedNode>
+         <ClosedNode>/debounce_tb - behavior E:|4A|ESE_VHDL|Keyboard_controller|debounce_tb.vhd</ClosedNode>
+         <ClosedNode>/debounce_tb - behavior L:|CPE 4ETI|Keyboard_controller|debounce_tb.vhd</ClosedNode>
+         <ClosedNode>/debounced_keyboard - Behavioral C:|Users|valentin.beynard|Documents|Keyboard_controller|debounced_keyboard.vhd</ClosedNode>
+         <ClosedNode>/debounced_keyboard_tb - behavior C:|Users|valentin.beynard|Documents|Keyboard_controller|debounced_keyboard_tb.vhd/uut - debounced_keyboard - Behavioral/UX - debounce - Behavioral</ClosedNode>
+         <ClosedNode>/digit_controller_tb - behavior C:|Users|valentin.beynard|Documents|Keyboard_controller|digit_controller_tb.vhd</ClosedNode>
+         <ClosedNode>/digit_controller_tb - behavior D:|4A|ESE_VHDL|Keyboard_controller|digit_controller_tb.vhd</ClosedNode>
+         <ClosedNode>/digit_controller_tb - behavior E:|4A|ESE_VHDL|Keyboard_controller|digit_controller_tb.vhd</ClosedNode>
+         <ClosedNode>/keydetector_tb - behavior C:|Users|valentin.beynard|Documents|Keyboard_controller|keydetector_tb.vhd</ClosedNode>
+         <ClosedNode>/keydetector_tb - behavior D:|4A|ESE_VHDL|Keyboard_controller|keydetector_tb.vhd</ClosedNode>
+         <ClosedNode>/keypad_controler - Behavioral C:|Users|valentin.beynard|Documents|Keyboard_controller|keypad_controler.vhd/U0 - counter_2b - Behavioral</ClosedNode>
+         <ClosedNode>/keypad_controler - Behavioral C:|Users|valentin.beynard|Documents|Keyboard_controller|keypad_controler.vhd/U2 - debounce - Behavioral</ClosedNode>
+         <ClosedNode>/keypad_controler - Behavioral D:|4A|ESE_VHDL|Keyboard_controller|keypad_controler.vhd/U2 - debounce - Behavioral</ClosedNode>
+         <ClosedNode>/keypad_controler - Behavioral E:|4A|ESE_VHDL|Keyboard_controller|keypad_controler.vhd/U2 - debounce - Behavioral</ClosedNode>
+         <ClosedNode>/keypad_controler - Behavioral E:|CPE 4ETI|Keyboard_controller|keypad_controler.vhd/U2 - debounce - Behavioral</ClosedNode>
+         <ClosedNode>/keypad_tb - behavior C:|Users|pierr|Documents|Ecole|4A|VHDL|vhdl_projet|Keyboard_controller|keypad_tb.vhd</ClosedNode>
+         <ClosedNode>/transcoder_2v4_tb - behavior C:|Users|pierr|Documents|Ecole|4A|VHDL|vhdl_projet|Keyboard_controller|transcoder_2v4_tb.vhd</ClosedNode>
+         <ClosedNode>/transcoder_2v4_tb - behavior C:|Users|valentin.beynard|Documents|Keyboard_controller|transcoder_2v4_tb.vhd</ClosedNode>
+         <ClosedNode>/transcoder_2v4_tb - behavior D:|4A|ESE_VHDL|Keyboard_controller|transcoder_2v4_tb.vhd</ClosedNode>
+         <ClosedNode>/transcoder_2v4_tb - behavior E:|4A|ESE_VHDL|Keyboard_controller|transcoder_2v4_tb.vhd</ClosedNode>
+         <ClosedNode>/transcoder_7seg_tb - behavior C:|Users|pierr|Documents|Ecole|4A|VHDL|vhdl_projet|Keyboard_controller|transcoder_7seg_tb.vhd</ClosedNode>
+         <ClosedNode>/transcoder_7seg_tb - behavior C:|Users|valentin.beynard|Documents|Keyboard_controller|transcoder_7seg_tb.vhd</ClosedNode>
+         <ClosedNode>/transcoder_7seg_tb - behavior D:|4A|ESE_VHDL|Keyboard_controller|transcoder_7seg_tb.vhd</ClosedNode>
+         <ClosedNode>/transcoder_7seg_tb - behavior E:|4A|ESE_VHDL|Keyboard_controller|transcoder_7seg_tb.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>counter_2b_tb - behavior (C:/Users/valentin.beynard/Documents/Keyboard_controller/counter_2b_tb.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bd000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bd0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>counter_2b_tb - behavior (C:/Users/valentin.beynard/Documents/Keyboard_controller/counter_2b_tb.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a5000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a50000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a5000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a50000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/clk_divider_behavioral - behavior C:|Users|valentin.beynard|Documents|ESE_VHDL|Keyboard_controller|clk_divider_behavioral.vhd</ClosedNode>
+         <ClosedNode>/debounce_fsm_tb - behavior C:|Users|valentin.beynard|Documents|ESE_VHDL|Keyboard_controller|debounce_fsm_tb.vhd</ClosedNode>
+         <ClosedNode>/debounce_tb - behavior C:|Users|valentin.beynard|Documents|ESE_VHDL|Keyboard_controller|debounce_tb.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>clk_divider_behavioral - behavior (E:/CPE 4ETI/Keyboard_controller/clk_divider_behavioral.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a3000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a30000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>clk_divider_behavioral - behavior (E:/CPE 4ETI/Keyboard_controller/clk_divider_behavioral.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ea000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ea0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ISim Simulator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a5000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a50000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+</Project>

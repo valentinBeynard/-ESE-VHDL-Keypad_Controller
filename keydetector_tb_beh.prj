@@ -1,0 +1,2 @@
+vhdl work "keydetector.vhd"
+vhdl work "keydetector_tb.vhd"

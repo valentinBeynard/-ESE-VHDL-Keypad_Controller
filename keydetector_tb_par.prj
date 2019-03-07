@@ -1,0 +1,2 @@
+vhdl work "netgen/par/keydetector_timesim.vhd"
+vhdl work "keydetector_tb.vhd"

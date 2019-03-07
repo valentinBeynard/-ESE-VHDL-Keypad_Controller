@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/keypad_controler.xst" -ofn "C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/keypad_controler.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 keypad_controler.ngc keypad_controler.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o keypad_controler_map.ncd keypad_controler.ngd keypad_controler.pcf 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keypad_controler.syr" 

@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "E:/4A/ESE_VHDL/Keyboard_controller/keydetector.xst" -ofn "E:/4A/ESE_VHDL/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "E:/4A/ESE_VHDL/Keyboard_controller/keydetector.xst" -ofn "E:/4A/ESE_VHDL/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
+xst -intstyle ise -ifn "L:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "L:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 "keydetector.ngc" keydetector.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o keydetector_map.ncd keydetector.ngd keydetector.pcf 
+par -w -intstyle ise -ol high -t 1 keydetector_map.ncd keydetector.ncd keydetector.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml keydetector.twx keydetector.ncd -o keydetector.twr keydetector.pcf 
+netgen -intstyle ise -s 4  -pcf keydetector.pcf -rpw 100 -tpw 0 -ar Structure -tm keydetector -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim keydetector.ncd keydetector_timesim.vhd 
+xst -intstyle ise -ifn "D:/CPE 4ETI/Keyboard_controller/keydetector.xst" -ofn "D:/CPE 4ETI/Keyboard_controller/keydetector.syr" 
