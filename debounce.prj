@@ -1,3 +1,0 @@
-vhdl work "debounce_fsm.vhd"
-vhdl work "clk_divider.vhd"
-vhdl work "debounce.vhd"

@@ -1,3 +1,0 @@
-vhdl work "clk_divider.vhd"
-vhdl work "display_controller.vhd"
-vhdl work "display_controller_tb.vhd"

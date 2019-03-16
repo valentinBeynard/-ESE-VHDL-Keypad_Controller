@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "L:/CPE 4ETI/Keyboard_controller/counter_2b.vhd";
+static const char *ng0 = "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/counter_2b.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_1242562249;
 
@@ -73,7 +73,7 @@ LAB2:    xsi_set_current_line(67, ng0);
         goto LAB5;
 
 LAB7:    xsi_set_current_line(74, ng0);
-    t1 = (t0 + 5694);
+    t1 = (t0 + 5794);
     t4 = (t0 + 3656);
     t7 = (t4 + 56U);
     t11 = *((char **)t7);
@@ -108,7 +108,7 @@ LAB9:    goto LAB6;
 LAB8:    xsi_set_current_line(69, ng0);
     t3 = (t0 + 1672U);
     t11 = *((char **)t3);
-    t3 = (t0 + 5664U);
+    t3 = (t0 + 5764U);
     t12 = ieee_p_1242562249_sub_1919365254_1035706684(IEEE_P_1242562249, t10, t11, t3, 1);
     t13 = (t10 + 12U);
     t14 = *((unsigned int *)t13);

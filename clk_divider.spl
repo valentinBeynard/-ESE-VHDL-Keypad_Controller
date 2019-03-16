@@ -1,5 +1,0 @@
-[Inputs]
-clk_50M
-[Outputs]
-clk_out
-[BiDir]

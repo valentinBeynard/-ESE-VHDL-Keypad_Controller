@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "L:/CPE 4ETI/Keyboard_controller/debounced_keyboard.vhd";
+static const char *ng0 = "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/debounced_keyboard.vhd";
 
 
 

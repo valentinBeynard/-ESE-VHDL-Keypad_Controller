@@ -57,22 +57,23 @@ begin
 		 clk_out => clk_250Hz
 	  );
 
-process (clk_250Hz) 
+process (clk, clk_250Hz) 
 begin 
 
-	if(rising_edge(clk_250Hz)) then
-		counter <= counter + 1; 		
+	if(rising_edge(clk)) then
+		if(clk_250Hz = '1') then
+			counter <= counter + 1; 		
+		end if;
 	end if;
-
 end process;
 
 digit_select <= STD_LOGIC_VECTOR(counter);
 
 with counter select
-	AN <= "1000" when "00",
-		  "0100" when "01",
-		  "0010" when "10",
-		  "0001" when others;
+	AN <= "0111" when "00",
+		  "1011" when "01",
+		  "1101" when "10",
+		  "1110" when others;
 
 end Behavioral;
 

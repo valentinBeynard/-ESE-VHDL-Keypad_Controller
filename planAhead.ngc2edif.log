@@ -9,3 +9,39 @@ Processing design ...
 Writing EDIF netlist file debounce.edif ...
 ngc2edif: Total memory usage is 75724 kilobytes
 
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design keypad_controler.ngc ...
+WARNING:NetListWriters:298 - No output is written to keypad_controler.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   U_Display_Controller/u_clk_divider/Mcompar_clk_out_int_cmp_lt0000_lut<6 : 1>
+   on block keypad_controler is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_Key_Debounce/GEN_DEBOUCE_UNITY[0].UX/U0/Mcompar_clk_out_int_cmp_lt0000_lut<
+   6 : 1> on block keypad_controler is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_Key_Debounce/GEN_DEBOUCE_UNITY[1].UX/U0/Mcompar_clk_out_int_cmp_lt0000_lut<
+   6 : 1> on block keypad_controler is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_Key_Debounce/GEN_DEBOUCE_UNITY[2].UX/U0/Mcompar_clk_out_int_cmp_lt0000_lut<
+   6 : 1> on block keypad_controler is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_Key_Debounce/GEN_DEBOUCE_UNITY[3].UX/U0/Mcompar_clk_out_int_cmp_lt0000_lut<
+   6 : 1> on block keypad_controler is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   U_counter_2b/U0/Mcompar_clk_out_int_cmp_lt0000_lut<9 : 1> on block
+   keypad_controler is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file keypad_controler.edif ...
+ngc2edif: Total memory usage is 80880 kilobytes
+

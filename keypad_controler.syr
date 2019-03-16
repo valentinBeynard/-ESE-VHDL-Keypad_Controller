@@ -1,16 +1,16 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.6 - xst P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: keypad_controler.prj
 
@@ -104,104 +104,114 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/clk_divider.vhd" in Library work.
-Architecture behavioral of Entity clk_divider is up to date.
-Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/debounce_fsm.vhd" in Library work.
-Architecture behavioral of Entity debounce_fsm is up to date.
-Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/debounce.vhd" in Library work.
-Architecture behavioral of Entity debounce is up to date.
-Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/counter_2b.vhd" in Library work.
-Architecture behavioral of Entity counter_2b is up to date.
-Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/transcoder_2v4.vhd" in Library work.
-Architecture behavioral of Entity transcoder_2v4 is up to date.
-Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/debounced_keyboard.vhd" in Library work.
-Architecture behavioral of Entity debounced_keyboard is up to date.
-Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/keydetector.vhd" in Library work.
-Architecture behavioral of Entity keydetector is up to date.
-Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/display_controller.vhd" in Library work.
-Architecture behavioral of Entity display_controller is up to date.
-Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/transcoder_7_segments.vhd" in Library work.
-Architecture behavioral of Entity transcoder_7_segments is up to date.
-Compiling vhdl file "L:/CPE 4ETI/Keyboard_controller/keypad_controler.vhd" in Library work.
-Architecture behavioral of Entity keypad_controler is up to date.
+Compiling vhdl file "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/clk_divider.vhd" in Library work.
+Entity <clk_divider> compiled.
+Entity <clk_divider> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/debounce_fsm.vhd" in Library work.
+Entity <debounce_fsm> compiled.
+Entity <debounce_fsm> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/debounce.vhd" in Library work.
+Entity <debounce> compiled.
+Entity <debounce> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/counter_2b.vhd" in Library work.
+Entity <counter_2b> compiled.
+Entity <counter_2b> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/transcoder_2v4.vhd" in Library work.
+Entity <transcoder_2v4> compiled.
+Entity <transcoder_2v4> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/debounced_keyboard.vhd" in Library work.
+Entity <debounced_keyboard> compiled.
+Entity <debounced_keyboard> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/keydetector.vhd" in Library work.
+Entity <keydetector> compiled.
+Entity <keydetector> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/display_controller.vhd" in Library work.
+Entity <display_controller> compiled.
+Entity <display_controller> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/transcoder_7_segments.vhd" in Library work.
+Entity <transcoder_7_segments> compiled.
+Entity <transcoder_7_segments> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/keypad_controler.vhd" in Library work.
+Entity <keypad_controler> compiled.
+Entity <keypad_controler> (Architecture <Behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <keypad_controler> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <keypad_controler> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <counter_2b> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <counter_2b> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <transcoder_2v4> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <transcoder_2v4> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <debounced_keyboard> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <debounced_keyboard> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <keydetector> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <keydetector> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <display_controller> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <display_controller> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <transcoder_7_segments> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <transcoder_7_segments> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <clk_divider> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <clk_divider> in library <work> (architecture <Behavioral>) with generics.
 	N = 1250000
 
-Analyzing hierarchy for entity <debounce> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <clk_divider> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <clk_divider> in library <work> (architecture <Behavioral>) with generics.
 	N = 200000
 
-Analyzing hierarchy for entity <clk_divider> in library <work> (architecture <behavioral>) with generics.
+Analyzing hierarchy for entity <clk_divider> in library <work> (architecture <Behavioral>) with generics.
 	N = 25000
 
-Analyzing hierarchy for entity <debounce_fsm> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <debounce_fsm> in library <work> (architecture <Behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <keypad_controler> in library <work> (Architecture <behavioral>).
+Analyzing Entity <keypad_controler> in library <work> (Architecture <Behavioral>).
 Entity <keypad_controler> analyzed. Unit <keypad_controler> generated.
 
-Analyzing Entity <counter_2b> in library <work> (Architecture <behavioral>).
+Analyzing Entity <counter_2b> in library <work> (Architecture <Behavioral>).
 Entity <counter_2b> analyzed. Unit <counter_2b> generated.
 
-Analyzing generic Entity <clk_divider.1> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <clk_divider.1> in library <work> (Architecture <Behavioral>).
 	N = 1250000
 Entity <clk_divider.1> analyzed. Unit <clk_divider.1> generated.
 
-Analyzing Entity <transcoder_2v4> in library <work> (Architecture <behavioral>).
+Analyzing Entity <transcoder_2v4> in library <work> (Architecture <Behavioral>).
 Entity <transcoder_2v4> analyzed. Unit <transcoder_2v4> generated.
 
-Analyzing Entity <debounced_keyboard> in library <work> (Architecture <behavioral>).
+Analyzing Entity <debounced_keyboard> in library <work> (Architecture <Behavioral>).
 Entity <debounced_keyboard> analyzed. Unit <debounced_keyboard> generated.
 
-Analyzing Entity <debounce> in library <work> (Architecture <behavioral>).
+Analyzing Entity <debounce> in library <work> (Architecture <Behavioral>).
 Entity <debounce> analyzed. Unit <debounce> generated.
 
-Analyzing generic Entity <clk_divider.3> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <clk_divider.3> in library <work> (Architecture <Behavioral>).
 	N = 25000
 Entity <clk_divider.3> analyzed. Unit <clk_divider.3> generated.
 
-Analyzing Entity <debounce_fsm> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "L:/CPE 4ETI/Keyboard_controller/debounce_fsm.vhd" line 52: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+Analyzing Entity <debounce_fsm> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/debounce_fsm.vhd" line 52: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <current_state>
 Entity <debounce_fsm> analyzed. Unit <debounce_fsm> generated.
 
-Analyzing Entity <keydetector> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "L:/CPE 4ETI/Keyboard_controller/keydetector.vhd" line 67: Mux is complete : default of case is discarded
+Analyzing Entity <keydetector> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1561 - "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/keydetector.vhd" line 67: Mux is complete : default of case is discarded
 Entity <keydetector> analyzed. Unit <keydetector> generated.
 
-Analyzing Entity <display_controller> in library <work> (Architecture <behavioral>).
+Analyzing Entity <display_controller> in library <work> (Architecture <Behavioral>).
 Entity <display_controller> analyzed. Unit <display_controller> generated.
 
-Analyzing generic Entity <clk_divider.2> in library <work> (Architecture <behavioral>).
+Analyzing generic Entity <clk_divider.2> in library <work> (Architecture <Behavioral>).
 	N = 200000
 Entity <clk_divider.2> analyzed. Unit <clk_divider.2> generated.
 
-Analyzing Entity <transcoder_7_segments> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "L:/CPE 4ETI/Keyboard_controller/transcoder_7_segments.vhd" line 64: Mux is complete : default of case is discarded
-INFO:Xst:1561 - "L:/CPE 4ETI/Keyboard_controller/transcoder_7_segments.vhd" line 84: Mux is complete : default of case is discarded
-WARNING:Xst:819 - "L:/CPE 4ETI/Keyboard_controller/transcoder_7_segments.vhd" line 73: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+Analyzing Entity <transcoder_7_segments> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1561 - "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/transcoder_7_segments.vhd" line 64: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/transcoder_7_segments.vhd" line 84: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/transcoder_7_segments.vhd" line 73: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <first_digit>, <second_digit>, <third_digit>, <fourth_digit>
 Entity <transcoder_7_segments> analyzed. Unit <transcoder_7_segments> generated.
 
@@ -213,7 +223,7 @@ Entity <transcoder_7_segments> analyzed. Unit <transcoder_7_segments> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <transcoder_2v4>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/transcoder_2v4.vhd".
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/transcoder_2v4.vhd".
     Found 4x4-bit ROM for signal <C>.
     Summary:
 	inferred   1 ROM(s).
@@ -221,7 +231,7 @@ Unit <transcoder_2v4> synthesized.
 
 
 Synthesizing Unit <keydetector>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/keydetector.vhd".
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/keydetector.vhd".
     Found 4-bit 4-to-1 multiplexer for signal <hexa_id>.
     Summary:
 	inferred   4 Multiplexer(s).
@@ -229,7 +239,7 @@ Unit <keydetector> synthesized.
 
 
 Synthesizing Unit <transcoder_7_segments>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/transcoder_7_segments.vhd".
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/transcoder_7_segments.vhd".
     Found 16x7-bit ROM for signal <segments_data>.
     Found 2-bit up counter for signal <counter>.
     Found 4-bit 4-to-1 multiplexer for signal <current_digit_code>.
@@ -246,7 +256,7 @@ Unit <transcoder_7_segments> synthesized.
 
 
 Synthesizing Unit <clk_divider_1>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/clk_divider.vhd".
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/clk_divider.vhd".
     Found 1-bit register for signal <clk_out_int>.
     Found 21-bit comparator less for signal <clk_out_int$cmp_lt0000> created at line 49.
     Found 21-bit up counter for signal <vcount>.
@@ -258,7 +268,7 @@ Unit <clk_divider_1> synthesized.
 
 
 Synthesizing Unit <clk_divider_3>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/clk_divider.vhd".
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/clk_divider.vhd".
     Found 1-bit register for signal <clk_out_int>.
     Found 15-bit comparator less for signal <clk_out_int$cmp_lt0000> created at line 49.
     Found 15-bit up counter for signal <vcount>.
@@ -270,7 +280,7 @@ Unit <clk_divider_3> synthesized.
 
 
 Synthesizing Unit <debounce_fsm>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/debounce_fsm.vhd".
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/debounce_fsm.vhd".
     Found finite state machine <FSM_0> for signal <current_state>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
@@ -296,7 +306,7 @@ Unit <debounce_fsm> synthesized.
 
 
 Synthesizing Unit <clk_divider_2>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/clk_divider.vhd".
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/clk_divider.vhd".
     Found 1-bit register for signal <clk_out_int>.
     Found 18-bit comparator less for signal <clk_out_int$cmp_lt0000> created at line 49.
     Found 18-bit up counter for signal <vcount>.
@@ -308,7 +318,7 @@ Unit <clk_divider_2> synthesized.
 
 
 Synthesizing Unit <counter_2b>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/counter_2b.vhd".
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/counter_2b.vhd".
     Found 2-bit up counter for signal <count_int>.
     Summary:
 	inferred   1 Counter(s).
@@ -316,7 +326,7 @@ Unit <counter_2b> synthesized.
 
 
 Synthesizing Unit <display_controller>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/display_controller.vhd".
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/display_controller.vhd".
     Found 4x4-bit ROM for signal <AN>.
     Found 2-bit up counter for signal <counter>.
     Summary:
@@ -326,19 +336,18 @@ Unit <display_controller> synthesized.
 
 
 Synthesizing Unit <debounce>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/debounce.vhd".
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/debounce.vhd".
 Unit <debounce> synthesized.
 
 
 Synthesizing Unit <debounced_keyboard>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/debounced_keyboard.vhd".
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/debounced_keyboard.vhd".
 WARNING:Xst:646 - Signal <internal_raw_lines_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <debounced_keyboard> synthesized.
 
 
 Synthesizing Unit <keypad_controler>.
-    Related source file is "L:/CPE 4ETI/Keyboard_controller/keypad_controler.vhd".
-WARNING:Xst:1306 - Output <hexa_code> is never assigned.
+    Related source file is "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/keypad_controler.vhd".
 Unit <keypad_controler> synthesized.
 
 
@@ -465,12 +474,12 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 25
+# IOs                              : 21
 
 Cell Usage :
-# BELS                             : 529
+# BELS                             : 530
 #      GND                         : 1
-#      INV                         : 33
+#      INV                         : 34
 #      LUT1                        : 107
 #      LUT2                        : 57
 #      LUT3                        : 32
@@ -481,11 +490,11 @@ Cell Usage :
 #      VCC                         : 1
 #      XORCY                       : 99
 # FlipFlops/Latches                : 179
-#      FD                          : 2
+#      FD                          : 1
 #      FDC                         : 8
 #      FDCE                        : 40
-#      FDE                         : 22
-#      FDR                         : 101
+#      FDE                         : 24
+#      FDR                         : 100
 #      FDRE                        : 2
 #      LD                          : 4
 # Clock Buffers                    : 1
@@ -502,8 +511,8 @@ Selected Device : 3s200ft256-4
 
  Number of Slices:                      144  out of   1920     7%  
  Number of Slice Flip Flops:            179  out of   3840     4%  
- Number of 4 input LUTs:                277  out of   3840     7%  
- Number of IOs:                          25
+ Number of 4 input LUTs:                278  out of   3840     7%  
+ Number of IOs:                          21
  Number of bonded IOBs:                  21  out of    173    12%  
  Number of GCLKs:                         1  out of      8    12%  
 
@@ -528,9 +537,8 @@ Clock Information:
 -----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+-------+
 Clock Signal                                                                                                                 | Clock buffer(FF name)                                         | Load  |
 -----------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------+-------+
-clk                                                                                                                          | BUFGP                                                         | 113   |
+clk                                                                                                                          | BUFGP                                                         | 115   |
 U_counter_2b/U0/clk_out_int                                                                                                  | NONE(U_counter_2b/count_int_0)                                | 2     |
-U_Display_Controller/u_clk_divider/clk_out_int                                                                               | NONE(U_Display_Controller/counter_1)                          | 2     |
 internal_non_activated(U_Key_Detector/key_is_pressed1:O)                                                                     | NONE(*)(U_Transcoder_7seg/counter_1)                          | 18    |
 U_Key_Debounce/GEN_DEBOUCE_UNITY[3].UX/U0/clk_out_int                                                                        | NONE(U_Key_Debounce/GEN_DEBOUCE_UNITY[3].UX/U1/m_tick_0_4)    | 10    |
 U_Key_Debounce/GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw_or0000(U_Key_Debounce/GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw_or00001:O)| NONE(*)(U_Key_Debounce/GEN_DEBOUCE_UNITY[3].UX/U1/debounce_sw)| 1     |
@@ -578,7 +586,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 6.470ns (frequency: 154.560MHz)
-  Total number of paths / destination ports: 2266 / 214
+  Total number of paths / destination ports: 2271 / 218
 -------------------------------------------------------------------------
 Delay:               6.470ns (Levels of Logic = 12)
   Source:            U_counter_2b/U0/vcount_4 (FF)
@@ -629,28 +637,6 @@ Delay:               3.462ns (Levels of Logic = 1)
     ----------------------------------------
     Total                      3.462ns (1.474ns logic, 1.988ns route)
                                        (42.6% logic, 57.4% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'U_Display_Controller/u_clk_divider/clk_out_int'
-  Clock period: 2.937ns (frequency: 340.483MHz)
-  Total number of paths / destination ports: 3 / 2
--------------------------------------------------------------------------
-Delay:               2.937ns (Levels of Logic = 1)
-  Source:            U_Display_Controller/counter_1 (FF)
-  Destination:       U_Display_Controller/counter_1 (FF)
-  Source Clock:      U_Display_Controller/u_clk_divider/clk_out_int rising
-  Destination Clock: U_Display_Controller/u_clk_divider/clk_out_int rising
-
-  Data Path: U_Display_Controller/counter_1 to U_Display_Controller/counter_1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               9   0.720   1.463  U_Display_Controller/counter_1 (U_Display_Controller/counter_1)
-     LUT2:I0->O            1   0.551   0.000  U_Display_Controller/Mcount_counter_xor<1>11 (Result<1>3)
-     FD:D                      0.203          U_Display_Controller/counter_1
-    ----------------------------------------
-    Total                      2.937ns (1.474ns logic, 1.463ns route)
-                                       (50.2% logic, 49.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'internal_non_activated'
@@ -807,19 +793,19 @@ Offset:              4.199ns (Levels of Logic = 3)
                                        (50.6% logic, 49.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'U_Display_Controller/u_clk_divider/clk_out_int'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 92 / 11
 -------------------------------------------------------------------------
 Offset:              11.558ns (Levels of Logic = 4)
   Source:            U_Display_Controller/counter_0 (FF)
   Destination:       segments_7_data<6> (PAD)
-  Source Clock:      U_Display_Controller/u_clk_divider/clk_out_int rising
+  Source Clock:      clk rising
 
   Data Path: U_Display_Controller/counter_0 to segments_7_data<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             14   0.720   1.526  U_Display_Controller/counter_0 (U_Display_Controller/counter_0)
+     FDE:C->Q             14   0.720   1.526  U_Display_Controller/counter_0 (U_Display_Controller/counter_0)
      LUT3:I0->O            1   0.551   0.000  U_Transcoder_7seg/Mmux_current_digit_code_3 (U_Transcoder_7seg/Mmux_current_digit_code_3)
      MUXF5:I1->O           7   0.360   1.405  U_Transcoder_7seg/Mmux_current_digit_code_2_f5 (U_Transcoder_7seg/current_digit_code<0>)
      LUT4:I0->O            1   0.551   0.801  U_Transcoder_7seg/Mrom_segments_data111 (segments_7_data_1_OBUF)
@@ -873,14 +859,14 @@ Offset:              9.242ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.98 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.59 secs
  
 --> 
 
-Total memory usage is 4550280 kilobytes
+Total memory usage is 265284 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    5 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

@@ -34,7 +34,6 @@ entity keypad_controler is
            rst : in  STD_LOGIC;
            segments_7_data : out  STD_LOGIC_VECTOR (6 downto 0);
            AN_control_display : out  STD_LOGIC_VECTOR (3 downto 0);
-			  hexa_code : out  STD_LOGIC_VECTOR (3 downto 0);
            columns : out  STD_LOGIC_VECTOR (3 downto 0);
            lines : in  STD_LOGIC_VECTOR (3 downto 0));
 end keypad_controler;

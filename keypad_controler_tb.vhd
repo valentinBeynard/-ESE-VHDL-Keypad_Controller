@@ -45,7 +45,7 @@ ARCHITECTURE behavior OF keypad_controler_tb IS
          rst : IN  std_logic;
 			segments_7_data : out  STD_LOGIC_VECTOR (6 downto 0);
          AN_control_display : out  STD_LOGIC_VECTOR (3 downto 0);
-         hexa_code : OUT  std_logic_vector(3 downto 0);
+         --hexa_code : OUT  std_logic_vector(3 downto 0);
          columns : OUT  std_logic_vector(3 downto 0);
          lines : IN  std_logic_vector(3 downto 0)
         );
@@ -72,7 +72,9 @@ BEGIN
    uut: keypad_controler PORT MAP (
           clk => clk,
           rst => rst,
-          hexa_code => hexa_code,
+			 segments_7_data => segments_7_data,
+			 AN_control_display => AN_control_display,
+          --hexa_code => hexa_code,
           columns => columns,
           lines => lines
         );
@@ -96,7 +98,7 @@ BEGIN
       wait for clk_period*10;
 
       -- insert stimulus here 
-		lines(0) <= '0', '1' after 1 ms, '0' after 2 ms, '1' after 3 ms, '0' after 5 ms, '1' after 8 ms, '0' after 9 ms, '1' after 10 ms, '0' after 59 ms;
+		lines(0) <= '0', '1' after 1 ms, '0' after 2 ms, '1' after 3 ms, '0' after 5 ms, '1' after 8 ms, '0' after 9 ms, '1' after 10 ms, '0' after 65 ms;
 
 
       wait;

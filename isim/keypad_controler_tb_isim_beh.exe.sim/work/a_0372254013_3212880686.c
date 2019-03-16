@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "L:/CPE 4ETI/Keyboard_controller/keydetector.vhd";
+static const char *ng0 = "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/keydetector.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_2545490612_503743352(char *, unsigned char , unsigned char );
@@ -79,29 +79,29 @@ static void work_a_0372254013_3212880686_p_0(char *t0)
 LAB0:    xsi_set_current_line(47, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5226);
+    t1 = (t0 + 5298);
     t4 = xsi_mem_cmp(t1, t2, 2U);
     if (t4 == 1)
         goto LAB3;
 
-LAB8:    t5 = (t0 + 5228);
+LAB8:    t5 = (t0 + 5300);
     t7 = xsi_mem_cmp(t5, t2, 2U);
     if (t7 == 1)
         goto LAB4;
 
-LAB9:    t8 = (t0 + 5230);
+LAB9:    t8 = (t0 + 5302);
     t10 = xsi_mem_cmp(t8, t2, 2U);
     if (t10 == 1)
         goto LAB5;
 
-LAB10:    t11 = (t0 + 5232);
+LAB10:    t11 = (t0 + 5304);
     t13 = xsi_mem_cmp(t11, t2, 2U);
     if (t13 == 1)
         goto LAB6;
 
 LAB11:
 LAB7:    xsi_set_current_line(69, ng0);
-    t1 = (t0 + 5234);
+    t1 = (t0 + 5306);
     t3 = (t0 + 3336);
     t5 = (t3 + 56U);
     t6 = *((char **)t5);

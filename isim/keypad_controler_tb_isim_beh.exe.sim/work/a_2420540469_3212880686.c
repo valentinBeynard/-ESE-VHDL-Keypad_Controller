@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "L:/CPE 4ETI/Keyboard_controller/debounce_fsm.vhd";
+static const char *ng0 = "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/debounce_fsm.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1744673427_503743352(char *, char *, unsigned int , unsigned int );

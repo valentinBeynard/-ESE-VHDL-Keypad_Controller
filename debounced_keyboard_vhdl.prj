@@ -1,4 +1,0 @@
-vhdl work "L:\CPE 4ETI\Keyboard_controller\debounce_fsm.vhd"
-vhdl work "L:\CPE 4ETI\Keyboard_controller\clk_divider.vhd"
-vhdl work "L:\CPE 4ETI\Keyboard_controller\debounce.vhd"
-vhdl work "L:\CPE 4ETI\Keyboard_controller\debounced_keyboard.vhd"

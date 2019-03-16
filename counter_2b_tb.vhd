@@ -89,7 +89,7 @@ BEGIN
       wait for clk_period*10;
 
       -- insert stimulus here 
-		block_counter <= '1' , '0' after 5 ms;
+		block_counter <= '1' , '0' after 50 ms;
 
       wait;
    end process;

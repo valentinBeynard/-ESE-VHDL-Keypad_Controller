@@ -1,0 +1,29 @@
+//! **************************************************************************
+// Written by: Map P.68d on Fri Mar 08 17:45:29 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "rst" LOCATE = SITE "M13" LEVEL 1;
+COMP "AN_control_display<0>" LOCATE = SITE "D14" LEVEL 1;
+COMP "AN_control_display<1>" LOCATE = SITE "G14" LEVEL 1;
+COMP "AN_control_display<2>" LOCATE = SITE "F14" LEVEL 1;
+COMP "AN_control_display<3>" LOCATE = SITE "E13" LEVEL 1;
+COMP "segments_7_data<0>" LOCATE = SITE "E14" LEVEL 1;
+COMP "segments_7_data<1>" LOCATE = SITE "G13" LEVEL 1;
+COMP "segments_7_data<2>" LOCATE = SITE "N15" LEVEL 1;
+COMP "segments_7_data<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "segments_7_data<4>" LOCATE = SITE "R16" LEVEL 1;
+COMP "segments_7_data<5>" LOCATE = SITE "F13" LEVEL 1;
+COMP "segments_7_data<6>" LOCATE = SITE "N16" LEVEL 1;
+COMP "columns<0>" LOCATE = SITE "C5" LEVEL 1;
+COMP "columns<1>" LOCATE = SITE "C6" LEVEL 1;
+COMP "columns<2>" LOCATE = SITE "C7" LEVEL 1;
+COMP "columns<3>" LOCATE = SITE "E6" LEVEL 1;
+COMP "lines<0>" LOCATE = SITE "D6" LEVEL 1;
+COMP "lines<1>" LOCATE = SITE "E7" LEVEL 1;
+COMP "lines<2>" LOCATE = SITE "D7" LEVEL 1;
+COMP "lines<3>" LOCATE = SITE "D8" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -1,6 +1,0 @@
-[Inputs]
-rst
-clk
-[Outputs]
-=count[1:0]=
-[BiDir]

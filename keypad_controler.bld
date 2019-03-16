@@ -1,20 +1,16 @@
-Release 14.7 ngdbuild P.20131013 (nt64)
+Release 14.6 ngdbuild P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: D:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -intstyle ise
--dd _ngo -nt timestamp -i -p xc3s200-ft256-4 keypad_controler.ngc
-keypad_controler.ngd
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc keypad_controler.ucf -p xc3s200-ft256-4
+keypad_controler.ngc keypad_controler.ngd
 
-Reading NGO file
-"C:/Users/pierr/Documents/Ecole/4A/VHDL/vhdl_projet/Keyboard_controller/keypad_c
-ontroler.ngc" ...
-Loading design module
-"C:\Users\pierr\Documents\Ecole\4A\VHDL\vhdl_projet\Keyboard_controller/keypad_c
-ontroler.ngc"...
-WARNING:NgdBuild:578 - Design contains no instances.
+Reading NGO file "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/keypad_controler.ngc"
+...
 Gathering constraint information from source properties...
 Done.
 
+Annotating constraints to design from ucf file "keypad_controler.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 Done...
@@ -30,12 +26,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   1
+  Number of warnings:   0
 
-Total memory usage is 4418932 kilobytes
+Total memory usage is 156576 kilobytes
 
 Writing NGD file "keypad_controler.ngd" ...
-Total REAL time to NGDBUILD completion:  4 sec
+Total REAL time to NGDBUILD completion:  3 sec
 Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "keypad_controler.bld"...
