@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\valentin.beynard\Documents\ESE_VHDL\Keyboard_controller\debounce.ncd
-OUTFILE=C:\Users\valentin.beynard\Documents\ESE_VHDL\Keyboard_controller\debounce.bit
-FAMILY=Spartan3
-PART=xc3s200-4ft256
-WORKINGDIR=C:\Users\valentin.beynard\Documents\ESE_VHDL\Keyboard_controller
-LICENSE=ISE
-USER_INFO=174171571_174171572_210553526_528

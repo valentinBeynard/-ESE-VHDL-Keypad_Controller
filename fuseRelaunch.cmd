@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/keypad_controler_tb_isim_beh.exe" -prj "C:/CPE_USERS/-ESE-VHDL-Keypad_Controller/keypad_controler_tb_beh.prj" "work.keypad_controler_tb" 

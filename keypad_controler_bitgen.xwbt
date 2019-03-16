@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\CPE_USERS\-ESE-VHDL-Keypad_Controller\keypad_controler.ncd
-OUTFILE=C:\CPE_USERS\-ESE-VHDL-Keypad_Controller\keypad_controler.bit
-FAMILY=Spartan3
-PART=xc3s200-4ft256
-WORKINGDIR=C:\CPE_USERS\-ESE-VHDL-Keypad_Controller
-LICENSE=ISE
-USER_INFO=174171571_174171572_210553526_528

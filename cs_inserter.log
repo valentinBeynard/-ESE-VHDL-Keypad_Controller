@@ -1,9 +1,0 @@
-ChipScope Core Inserter Log - Created Fri Feb 15 09:19:46 CET 2019
-Release 14.6 ChipScope Core Inserter 14600.13.159.658
-Copyright (c) 1999-2012 Xilinx, Inc. All Rights Reserved.
-
-Command Line: inserter -intstyle ise -mode initial -proj C:/Users/valentin.beynard/Documents/ESE_VHDL/Keyboard_controller/UCF.cdc -p xc3s200 -output_dir _ngo -ise_project_dir C:/Users/valentin.beynard/Documents/ESE_VHDL/Keyboard_controller -server 
-
-Connecting to server output stream
-Generating CDC file C:\Users\valentin.beynard\Documents\ESE_VHDL\Keyboard_controller\UCF.cdc
-Successfully Wrote Project C:\Users\valentin.beynard\Documents\ESE_VHDL\Keyboard_controller\UCF.cdc
