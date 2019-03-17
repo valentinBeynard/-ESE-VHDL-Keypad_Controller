@@ -1,0 +1,31 @@
+NET "clk" LOC = T9;
+NET "clk" IOSTANDARD = LVCMOS33;
+
+NET "rst" LOC = M13;
+NET "rst" IOSTANDARD = LVCMOS33;
+
+
+# PlanAhead Generated physical constraints 
+
+NET "lines[0]" LOC = D6 | IOSTANDARD = LVCMOS33;
+NET "lines[2]" LOC = D7 | IOSTANDARD = LVCMOS33;
+NET "lines[3]" LOC = D8 | IOSTANDARD = LVCMOS33;
+NET "lines[1]" LOC = E7 | IOSTANDARD = LVCMOS33;
+NET "columns[0]" LOC = C5 | IOSTANDARD = LVCMOS33;
+NET "columns[1]" LOC = C6 | IOSTANDARD = LVCMOS33;
+NET "columns[2]" LOC = C7 | IOSTANDARD = LVCMOS33;
+NET "columns[3]" LOC = E6 | IOSTANDARD = LVCMOS33;
+
+NET "AN_control_display<0>"     LOC = D14 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # Anode Control 0
+NET "AN_control_display<1>"     LOC = G14 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # Anode Control 1
+NET "AN_control_display<2>"     LOC = F14 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # Anode Control 2
+NET "AN_control_display<3>"     LOC = E13 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # Anode Control 3
+
+NET "segments_7_data<0>"   LOC = E14 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # a  Digit
+NET "segments_7_data<1>"   LOC = G13 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # b  Digit
+NET "segments_7_data<2>"   LOC = N15 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # c  Digit
+NET "segments_7_data<3>"   LOC = P15 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # d  Digit
+NET "segments_7_data<4>"   LOC = R16 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # e  Digit
+NET "segments_7_data<5>"   LOC = F13 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # f  Digit
+NET "segments_7_data<6>"   LOC = N16 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # g  Digit
+#NET "segments_7_data<7>"   LOC = P16 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;     # dp Digit
