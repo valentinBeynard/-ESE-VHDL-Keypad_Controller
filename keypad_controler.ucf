@@ -29,3 +29,10 @@ NET "segments_7_data<4>"   LOC = R16 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 2
 NET "segments_7_data<5>"   LOC = F13 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # f  Digit
 NET "segments_7_data<6>"   LOC = N16 | IOSTANDARD = LVCMOS33;     #  | DRIVE = 24 | SLEW = FAST;     # g  Digit
 #NET "segments_7_data<7>"   LOC = P16 | IOSTANDARD = LVCMOS33 | DRIVE = 24 | SLEW = FAST;     # dp Digit
+
+NET "valid_out<0>"   LOC = P11 | IOSTANDARD = LVCMOS33; #LEDS
+NET "valid_out<1>"   LOC = P12 | IOSTANDARD = LVCMOS33;  
+NET "valid_out<2>"   LOC = N12 | IOSTANDARD = LVCMOS33;  
+NET "valid_out<3>"   LOC = P13 | IOSTANDARD = LVCMOS33;  
+NET "valid_out<4>"   LOC = N14 | IOSTANDARD = LVCMOS33;  
+NET "valid_out<5>"   LOC = L12 | IOSTANDARD = LVCMOS33;  
